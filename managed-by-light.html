@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Club Unique — Now Managed by Elite Escapes</title>
+<meta name="description" content="Official announcement: Elite Escapes has assumed full management of Club Unique. Your membership, benefits and services are now managed at elite-escapes.club." />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Club Unique — Now Managed by Elite Escapes" />
+<meta property="og:description" content="Elite Escapes is now the official manager of Club Unique. Visit us at elite-escapes.club." />
+<meta property="og:image" content="img/hero-patong.jpg" />
+<meta property="og:url" content="https://www.elite-escapes.club/" />
+
+<link rel="icon" href="img/logo-palm.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --ivory:#f7f2e8;
+    --ivory-2:#efe7d7;
+    --navy:#16233f;
+    --ink:#26231d;
+    --muted:#5d5748;
+    --gold:#c69c4e;
+    --gold-bright:#dbb96f;
+    --gold-deep:#8a691f;
+    --serif:"Cormorant Garamond","Iowan Old Style",Palatino,Georgia,serif;
+    --sans:"Jost","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);font-weight:300;color:var(--ink);background:var(--ivory);-webkit-font-smoothing:antialiased;line-height:1.7}
+  img{max-width:100%;display:block}
+
+  /* ============ ONE-SCREEN PAGE ============ */
+  .page{
+    position:relative;min-height:100vh;min-height:100dvh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;overflow:hidden;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, #fdfaf3, transparent 70%),
+      linear-gradient(180deg,var(--ivory) 0%,var(--ivory-2) 100%);
+    padding:clamp(28px,4.5vh,48px) clamp(24px,5vw,64px);
+  }
+  /* thin gold hairline frame */
+  .frame{
+    position:absolute;inset:clamp(14px,2.4vw,26px);z-index:1;pointer-events:none;
+    border:1px solid rgba(169,130,47,.35);
+  }
+  .frame::before,.frame::after{
+    content:"";position:absolute;width:26px;height:26px;border-color:rgba(169,130,47,.8);border-style:solid;
+  }
+  .frame::before{top:-1px;left:-1px;border-width:1px 0 0 1px}
+  .frame::after{bottom:-1px;right:-1px;border-width:0 1px 1px 0}
+
+  .content{position:relative;z-index:2;width:100%;max-width:900px;margin:0 auto}
+
+  /* ---- Side-by-side co-brand lockup ---- */
+  .lockup{
+    display:flex;align-items:center;justify-content:center;
+    gap:clamp(26px,4vw,56px);
+    margin:0 auto clamp(14px,2.6vh,26px);
+  }
+  .logo{width:clamp(150px,17.5vw,225px);height:auto}
+  .logo-cu{width:clamp(130px,14.5vw,188px)}
+  .divider{
+    width:1px;align-self:stretch;min-height:92px;
+    background:linear-gradient(180deg,transparent,rgba(169,130,47,.65),transparent);
+  }
+
+  .dateline{
+    font-size:11px;letter-spacing:.38em;text-transform:uppercase;font-weight:500;
+    color:var(--gold-deep);margin-bottom:clamp(8px,1.4vh,14px);padding-left:.38em;
+  }
+  .headline{
+    font-family:var(--serif);font-weight:600;
+    font-size:clamp(19px,2.6vw,36px);line-height:1.25;color:var(--navy);
+    white-space:nowrap;max-width:none;margin:0 auto clamp(14px,2.4vh,24px);
+  }
+  .rule{
+    width:70px;height:1px;margin:0 auto clamp(16px,2.8vh,28px);
+    background:linear-gradient(90deg,transparent,var(--gold-deep),transparent);
+  }
+  .cols{
+    display:flex;flex-direction:column;gap:12px;
+    max-width:680px;margin:0 auto;text-align:left;
+  }
+  .body-text{
+    font-size:clamp(14px,1.65vw,15.5px);font-weight:400;letter-spacing:.015em;
+    line-height:1.8;color:var(--ink);margin:0;
+  }
+  .body-text strong{font-weight:600;color:var(--gold-deep)}
+  .quote{
+    font-family:var(--serif);font-style:italic;font-weight:500;
+    font-size:clamp(16px,2vw,20px);line-height:1.6;color:var(--navy);
+    max-width:640px;margin:clamp(18px,3.2vh,30px) auto clamp(20px,3.6vh,34px);
+    padding-top:clamp(14px,2.4vh,22px);
+    border-top:1px solid rgba(169,130,47,.3);
+  }
+  .quote span{
+    display:block;margin-top:10px;
+    font-family:var(--sans);font-style:normal;font-weight:500;
+    font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);
+  }
+
+  /* gold button, white text */
+  .cta{
+    display:inline-flex;align-items:center;gap:14px;
+    font-size:13.5px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;
+    color:#fff;text-decoration:none;
+    background:linear-gradient(120deg,#8c6a24 0%,var(--gold) 45%,var(--gold-deep) 100%);
+    padding:19px 44px 19px calc(44px + .28em);border-radius:2px;
+    box-shadow:0 18px 40px -16px rgba(169,130,47,.55);
+    transition:box-shadow .25s,transform .25s,filter .25s;
+  }
+  .cta:hover{transform:translateY(-2px);filter:brightness(1.07);box-shadow:0 24px 50px -16px rgba(169,130,47,.7)}
+  .cta svg{transition:transform .25s}
+  .cta:hover svg{transform:translateX(5px)}
+
+  .contact{margin-top:clamp(16px,2.8vh,26px);font-size:13.5px;font-weight:400;letter-spacing:.05em;color:var(--muted)}
+  .contact a{color:var(--gold-deep);text-decoration:none;border-bottom:1px solid rgba(169,130,47,.4);padding-bottom:1px}
+  .contact a:hover{color:var(--navy)}
+
+  .foot{
+    position:relative;z-index:2;margin-top:clamp(16px,3vh,26px);
+    font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:rgba(38,35,29,.55);
+  }
+
+  /* ============ MOBILE ============ */
+  @media (max-width:640px){
+    .page{padding:30px 20px}
+    .frame{inset:10px}
+    .frame::before,.frame::after{width:18px;height:18px}
+    .headline{font-size:21px;padding:0 4px;white-space:normal}
+    .cols{gap:12px}
+    .body-text{font-size:13px;padding:0 4px}
+    .quote{font-size:15px;padding:12px 4px 0}
+    .cta{font-size:12px;letter-spacing:.2em;padding:16px 30px 16px calc(30px + .2em)}
+    .contact{font-size:11.5px;line-height:2;padding:0 8px}
+    .foot{font-size:8.5px;letter-spacing:.18em;line-height:2;padding:0 14px}
+  }
+  @media (max-width:560px){
+    .lockup{flex-direction:column;gap:18px}
+    .divider{width:130px;height:1px;min-height:0;align-self:center;background:linear-gradient(90deg,transparent,rgba(169,130,47,.65),transparent)}
+    .logo{width:min(190px,52vw)}
+    .logo-cu{width:min(158px,44vw)}
+  }
+</style>
+</head>
+<body>
+
+  <main class="page">
+    <div class="frame"></div>
+
+    <div class="content">
+      <div class="lockup">
+        <img class="logo" src="img/logo-full.png" alt="Elite Escapes" />
+        <span class="divider"></span>
+        <img class="logo logo-cu" src="img/logo-club-unique.png" alt="Club Unique" />
+      </div>
+
+      <p class="dateline">Phuket, Thailand</p>
+      <h1 class="headline">Elite Escapes Assumes Full Management of Club Unique</h1>
+      <div class="rule"></div>
+
+      <div class="cols">
+        <p class="body-text"><strong>Elite Escapes</strong> is proud to announce that it has officially taken over the complete management and administration of <strong>Club Unique</strong>, marking a new chapter in delivering premium vacation experiences.</p>
+        <p class="body-text">This transition reflects the company's commitment to enhancing services, expanding destination offerings, and providing members with unforgettable escapes.</p>
+      </div>
+
+      <p class="quote">&ldquo;We are excited to welcome Club Unique members under the management of Elite Escapes. Our focus remains on delivering exceptional service, exclusive benefits, and trusted communication.&rdquo;<span>— The Management Team</span></p>
+
+      <a class="cta" href="https://www.elite-escapes.club/" target="_blank" rel="noopener">
+        elite-escapes.club
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <p class="contact">For more information · Elite Escapes Member Services · <a href="mailto:memberservice@elite-escapes.club">memberservice@elite-escapes.club</a></p>
+    </div>
+
+    <p class="foot">&copy; 2026 Elite Escapes · Phuket, Thailand</p>
+  </main>
+
+</body>
+</html>
